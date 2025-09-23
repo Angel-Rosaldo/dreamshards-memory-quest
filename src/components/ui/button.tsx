@@ -15,6 +15,12 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        
+        // Dreamshards custom variants
+        pixel: "bg-card text-card-foreground border-2 border-primary font-pixel text-xs px-6 py-3 shadow-glow hover:bg-primary hover:text-primary-foreground hover:shadow-dream transition-all duration-300 hover:scale-105",
+        crystal: "bg-gradient-crystal text-background border-2 border-crystal font-pixel text-xs px-6 py-3 shadow-crystal hover:shadow-glow transition-all duration-300 hover:scale-105 animate-glow-pulse",
+        hero: "bg-gradient-memory text-background border-2 border-accent font-pixel text-sm px-8 py-4 shadow-dream hover:shadow-glow transition-all duration-300 hover:scale-110 hover:-translate-y-1",
+        "ghost-pixel": "text-foreground font-pixel text-xs hover:bg-surface hover:text-surface-foreground border border-transparent hover:border-primary transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",

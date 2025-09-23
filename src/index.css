@@ -2,41 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Dreamshards Design System - Pixel Art Dream Aesthetic
+All colors MUST be HSL based on the game's color palette.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Dream Colors */
+    --background: 237 100% 8%;            /* Deep space blue #1A237E */
+    --foreground: 0 0% 100%;              /* Pure white for contrast */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card and Surface Colors */
+    --card: 253 84% 25%;                  /* Rich purple #6610DA */
+    --card-foreground: 0 0% 100%;
+    
+    --surface: 253 84% 35%;               /* Lighter purple variant */
+    --surface-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 253 84% 25%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary Brand Colors */
+    --primary: 290 84% 60%;               /* Vibrant magenta #D459F1 */ 
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 290 84% 70%;          /* Lighter magenta for glow effects */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary Dream Colors */
+    --secondary: 253 84% 35%;             /* Medium purple */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent Colors */
+    --accent: 55 100% 75%;                /* Dream yellow #FFF380 */
+    --accent-foreground: 237 100% 8%;     /* Dark blue text on yellow */
+    
+    --crystal: 290 100% 80%;              /* Crystal pink for shards */
+    --crystal-glow: 290 100% 90%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted Colors */
+    --muted: 253 50% 20%;
+    --muted-foreground: 253 20% 70%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and Inputs */
+    --border: 253 50% 30%;
+    --input: 253 50% 25%;
+    --ring: 290 84% 60%;
 
     --radius: 0.5rem;
+
+    /* Dream Gradients */
+    --gradient-dream: linear-gradient(135deg, hsl(237 100% 8%), hsl(253 84% 25%), hsl(290 84% 60%));
+    --gradient-memory: linear-gradient(45deg, hsl(290 84% 60%), hsl(55 100% 75%));
+    --gradient-night: linear-gradient(180deg, hsl(237 100% 8%), hsl(253 84% 15%));
+    --gradient-crystal: linear-gradient(135deg, hsl(290 100% 80%), hsl(290 84% 60%));
+
+    /* Pixel Shadows and Glows */
+    --shadow-dream: 0 8px 32px hsl(290 84% 60% / 0.3);
+    --shadow-glow: 0 0 20px hsl(290 84% 60% / 0.5);
+    --shadow-crystal: 0 4px 20px hsl(290 100% 80% / 0.4);
+
+    /* Typography */
+    --font-pixel: 'Press Start 2P', monospace;
+    --font-sans: 'Montserrat', sans-serif;
+
+    /* Animations */
+    --transition-dream: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-float: transform 3s ease-in-out infinite;
 
     --sidebar-background: 0 0% 98%;
 
@@ -55,42 +89,9 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
+  /* Dark mode inherits the dream theme - this game is naturally dark themed */
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Same as light mode since this is a dark-themed game */
   }
 }
 
