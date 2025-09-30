@@ -3,19 +3,19 @@ import charactersImage from "@/assets/characters-trio.jpg";
 
 const characters = [
   {
-    name: "The Boy",
-    role: "Protagonist",
-    description: "A brave young soul searching for his lost memories through the realm of dreams."
+    name: "Jason W. Token",
+    role: "Protagonista",
+    description: "Un joven valiente que busca sus recuerdos perdidos a través del reino de los sueños."
   },
   {
-    name: "Dream Guardian",
-    role: "Ally",
-    description: "Mystical creatures that protect the dream worlds and guide lost souls."
+    name: "Feiri",
+    role: "Aliado",
+    description: "Criaturas místicas que protegen los mundos de sueños y guían a las almas perdidas."
   },
   {
-    name: "Memory Thief",
-    role: "Antagonist", 
-    description: "A dark entity that steals precious memories, leaving emptiness behind."
+    name: "Liderc",
+    role: "Antagonista", 
+    description: "Una entidad oscura que roba recuerdos valiosos, dejando vacío a su paso."
   }
 ];
 
@@ -32,10 +32,10 @@ const CharacterShowcase = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="font-pixel text-3xl md:text-4xl text-foreground mb-6">
-            MEET THE CHARACTERS
+            CONOCE A LOS PERSONAJES
           </h2>
           <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto">
-            Every dream tells a story, every character holds a piece of the truth
+            Cada sueño cuenta una historia, cada personaje guarda una parte de la verdad
           </p>
         </div>
 
@@ -44,7 +44,7 @@ const CharacterShowcase = () => {
           <div className="relative animate-fade-in-up">
             <img 
               src={charactersImage} 
-              alt="Game characters: protagonist boy, dream guardian, and memory thief antagonist"
+              alt="Personajes del juego: niño protagonista, guardián del sueño y antagonista ladrón de memorias"
               className="w-full h-auto rounded-lg shadow-dream border-2 border-surface"
             />
             <div className="absolute inset-0 bg-gradient-crystal opacity-10 rounded-lg"></div>

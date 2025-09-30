@@ -10,13 +10,13 @@ const Navigation = () => {
           
           <div className="hidden md:flex items-center gap-8">
             <a href="#game" className="font-pixel text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
-              Game
+              Juego
             </a>
             <a href="#characters" className="font-pixel text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
-              Characters
+              Personajes
             </a>
             <a href="#story" className="font-pixel text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
-              Story
+              Historia
             </a>
           </div>
 
@@ -25,7 +25,7 @@ const Navigation = () => {
               Wishlist
             </Button>
             <Button variant="pixel">
-              Play Now
+              Jugar Ya
             </Button>
           </div>
         </div>

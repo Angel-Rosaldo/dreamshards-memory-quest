@@ -9,24 +9,24 @@ const Footer = () => {
           <div className="space-y-4">
             <DreamshardsBrand />
             <p className="font-sans text-sm text-muted-foreground leading-relaxed">
-              A magical journey through dream worlds to recover lost memories.
+              Un viaje mágico a través de mundos de sueños para recuperar recuerdos perdidos.
             </p>
           </div>
 
           {/* Links */}
           <div className="space-y-4">
             <h3 className="font-pixel text-sm text-foreground uppercase tracking-wider">
-              Game
+              Juego
             </h3>
             <div className="space-y-2">
               <a href="#" className="block font-sans text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Play Now
+                Jugar Ahora
               </a>
               <a href="#" className="block font-sans text-sm text-muted-foreground hover:text-foreground transition-colors">
-                System Requirements
+                Requisitos del Sistema
               </a>
               <a href="#" className="block font-sans text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Press Kit
+                Kit de Prensa
               </a>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Footer = () => {
           {/* Community */}
           <div className="space-y-4">
             <h3 className="font-pixel text-sm text-foreground uppercase tracking-wider">
-              Community
+              Comunidad
             </h3>
             <div className="space-y-2">
               <a href="#" className="block font-sans text-sm text-muted-foreground hover:text-foreground transition-colors">
@@ -44,7 +44,7 @@ const Footer = () => {
                 Twitter
               </a>
               <a href="#" className="block font-sans text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Newsletter
+                Boletín
               </a>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Footer = () => {
 
         <div className="border-t border-surface mt-8 pt-8 text-center">
           <p className="font-pixel text-xs text-muted-foreground uppercase tracking-wider">
-            © 2024 Dreamshards. All memories preserved.
+            © 2024 Dreamshards. Todos los recuerdos preservados.
           </p>
         </div>
       </div>

@@ -22,33 +22,33 @@ const HeroSection = () => {
             <div className="flex justify-center lg:justify-start mb-6">
               <img 
                 src={crystalShard} 
-                alt="Memory Crystal"
+                alt="Cristal de Memoria"
                 className="w-16 h-16 animate-crystal-shine drop-shadow-glow"
               />
             </div>
 
-            <h1 className="font-pixel text-4xl md:text-6xl lg:text-7xl text-foreground leading-tight">
-              DREAM
-              <span className="block text-primary animate-glow-pulse">SHARDS</span>
+            <h1 className="font-pixel text-3xl md:text-5xl lg:text-6xl text-foreground leading-tight">
+              FRAGMENTOS
+              <span className="block text-primary animate-glow-pulse">DE SUEÑO</span>
             </h1>
 
             <p className="font-sans text-lg md:text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              Embark on a magical journey through <span className="text-primary">dream worlds</span> as a young boy 
-              searching for fragments of his <span className="text-crystal">lost memories</span>.
+              Emprende un viaje mágico a través de <span className="text-primary">mundos de sueños</span> como un joven 
+              que busca fragmentos de sus <span className="text-crystal">recuerdos perdidos</span>.
             </p>
 
             <div className="space-y-4">
               <p className="font-pixel text-sm text-accent uppercase tracking-wider">
-                Adventure • Platformer • Pixel Art
+                Aventura • Plataformas • Pixel Art
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button variant="hero" className="group">
-                  Play Now
+                  Jugar Ahora
                   <div className="ml-2 group-hover:translate-x-1 transition-transform">→</div>
                 </Button>
                 <Button variant="crystal">
-                  Watch Trailer
+                  Ver Tráiler
                 </Button>
               </div>
             </div>
@@ -60,7 +60,7 @@ const HeroSection = () => {
             <div className="relative flex justify-center">
               <img
                 src={gifDreamshard}
-                alt="Dreamshard animado"
+                alt="Fragmento de sueño animado"
                 className="w-[800px] h-auto rounded-lg shadow-dream border-2 border-surface"
               />
             </div>

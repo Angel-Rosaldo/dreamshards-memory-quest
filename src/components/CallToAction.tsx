@@ -15,29 +15,29 @@ const CallToAction = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-3xl mx-auto space-y-8 animate-fade-in-up">
           <h2 className="font-pixel text-3xl md:text-5xl text-foreground leading-tight">
-            YOUR ADVENTURE
-            <span className="block text-primary animate-glow-pulse">AWAITS</span>
+            TU AVENTURA
+            <span className="block text-primary animate-glow-pulse">TE ESPERA</span>
           </h2>
 
           <p className="font-sans text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Step into a world where <span className="text-crystal">memories</span> become reality 
-            and <span className="text-primary">dreams</span> hold the key to your past. 
-            Will you help the boy reclaim what was lost?
+            Entra en un mundo donde los <span className="text-crystal">recuerdos</span> se vuelven realidad 
+            y los <span className="text-primary">sueños</span> guardan la clave de tu pasado. 
+            ¿Ayudarás al niño a recuperar lo que perdió?
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
             <Button variant="hero" className="group text-base">
-              Start Your Journey
+              Comienza tu viaje
               <div className="ml-2 group-hover:translate-x-1 transition-transform">→</div>
             </Button>
             <Button variant="crystal" className="text-base">
-              Learn More
+              Saber más
             </Button>
           </div>
 
           <div className="pt-8">
             <p className="font-pixel text-xs text-accent uppercase tracking-wider">
-              Available on PC • Coming Soon to Consoles
+              Disponible en PC • Próximamente en consolas
             </p>
           </div>
         </div>

@@ -2,23 +2,23 @@ import { Card } from "@/components/ui/card";
 
 const features = [
   {
-    title: "Dreamy Worlds",
-    description: "Explore beautifully crafted pixel art landscapes filled with wonder and mystery.",
+    title: "Mundos Oníricos",
+    description: "Explora paisajes de pixel art bellamente diseñados llenos de maravilla y misterio.",
     icon: "🌙"
   },
   {
-    title: "Memory Fragments",
-    description: "Collect lost memory shards to piece together the boy's forgotten past.",
+    title: "Fragmentos de Memoria",
+    description: "Recolecta fragmentos de memoria perdidos para reconstruir el pasado olvidado del niño.",
     icon: "💎"
   },
   {
-    title: "Epic Adventure",
-    description: "Journey through challenging platformer levels with unique mechanics.",
+    title: "Aventuras Épicas",
+    description: "Viaja a través de desafiantes niveles de plataformas con mecánicas únicas.",
     icon: "⚔️"
   },
   {
-    title: "Magical Creatures",
-    description: "Meet mystical dream guardians and face the memory-stealing antagonist.",
+    title: "Criaturas Mágicas",
+    description: "Conoce guardianes místicos del sueño y enfréntate al antagonista que roba recuerdos.",
     icon: "✨"
   }
 ];
@@ -29,10 +29,10 @@ const GameFeatures = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="font-pixel text-3xl md:text-4xl text-foreground mb-6">
-            GAME FEATURES
+            CARACTERÍSTICAS DEL JUEGO
           </h2>
           <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto">
-            Immerse yourself in a world where dreams and reality collide
+            Sumérgete en un mundo donde los sueños y la realidad se entrelazan
           </p>
         </div>
 
