@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-character.jpg";
 import crystalShard from "@/assets/crystal-shard.png";
+import gifDreamshard from "@/assets/gifdream2.gif";
 
 const HeroSection = () => {
   return (
@@ -56,15 +56,14 @@ const HeroSection = () => {
 
           {/* Hero image */}
           <div className="relative animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            <div className="relative">
-              <img 
-                src={heroImage} 
-                alt="Young boy protagonist in dreamy landscape with crystal shards"
-                className="w-full h-auto rounded-lg shadow-dream border-2 border-surface"
+            {/* GIF decorativo más grande */}
+            <div className="relative flex justify-center">
+              <img
+                src={gifDreamshard}
+                alt="Dreamshard animado"
+                className="w-[800px] h-auto rounded-lg shadow-dream border-2 border-surface"
               />
-              <div className="absolute inset-0 bg-gradient-crystal opacity-20 rounded-lg"></div>
             </div>
-            
             {/* Floating decorative elements */}
             <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-crystal rounded-full animate-float opacity-80 shadow-crystal"></div>
             <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-accent rounded-full animate-float opacity-70" style={{ animationDelay: '1.5s' }}></div>
