@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-background border-t border-surface py-12">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-1 gap-8">
           {/* Brand */}
           <div className="space-y-4">
             <DreamshardsBrand />
@@ -13,7 +13,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Links */}
+          {/* Sección Juego - Comentado temporalmente
           <div className="space-y-4">
             <h3 className="font-pixel text-sm text-foreground uppercase tracking-wider">
               Juego
@@ -30,8 +30,9 @@ const Footer = () => {
               </a>
             </div>
           </div>
+          */}
 
-          {/* Community */}
+          {/* Sección Comunidad - Comentado temporalmente
           <div className="space-y-4">
             <h3 className="font-pixel text-sm text-foreground uppercase tracking-wider">
               Comunidad
@@ -48,6 +49,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
+          */}
         </div>
 
         <div className="border-t border-surface mt-8 pt-8 text-center">
