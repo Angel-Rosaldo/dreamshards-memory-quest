@@ -42,6 +42,7 @@ const HeroSection = () => {
                 Aventura • Plataformas • Pixel Art
               </p>
               
+              {/* Botones comentados temporalmente - funcionalidad futura
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button variant="hero" className="group">
                   Jugar Ahora
@@ -51,6 +52,7 @@ const HeroSection = () => {
                   Ver Tráiler
                 </Button>
               </div>
+              */}
             </div>
           </div>
 
