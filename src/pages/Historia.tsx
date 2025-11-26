@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import fondo from "@/assets/fondo.jpg";
+import hero from "@/assets/hero-character.jpg";
 
 const Historia = () => {
   return (
@@ -32,21 +34,20 @@ const Historia = () => {
                   El Comienzo del Viaje
                 </h3>
                 <p className="font-sans text-base text-muted-foreground leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  El joven Jason William Token vivía en un pequeño pueblo, donde los días transcurrían sin mayores emociones. 
+                  Sin embargo, una noche, Liderc, un ser misterioro que con su sola presencia emanaba oscuridad, tras una lucha con él, nuestro joven protagonista perdió sus memorias
+                  a costas del villano.
                 </p>
                 <p className="font-sans text-base text-muted-foreground leading-relaxed">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Ahora debe embarcarse en una aventura a través de bosques mágicos y cavernas oscuras junto con Fairy, un hada que lo guiará en su misión para recuperar sus recuerdos perdidos
+                  y pelear con distintos enemigos.
                 </p>
               </div>
 
-              {/* Imagen 1 - AGREGAR MANUALMENTE */}
+              {/* Imagen 1 */}
               <div className="relative animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                <div className="w-full h-[400px] bg-surface/20 rounded-lg border-2 border-surface flex items-center justify-center">
-                  <p className="font-pixel text-xs text-muted-foreground">
-                    [AGREGAR IMAGEN AQUÍ]
-                  </p>
+                <div className="w-full h-[400px] bg-surface/20 rounded-lg border-2 border-surface flex items-center justify-center overflow-hidden">
+                  <img src={fondo} alt="Fondo Historia" className="w-full h-full object-cover rounded-lg" />
                 </div>
                 <div className="absolute inset-0 bg-gradient-crystal opacity-10 rounded-lg"></div>
               </div>
@@ -54,12 +55,10 @@ const Historia = () => {
 
             {/* Segunda sección de historia con imagen (invertida) */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Imagen 2 - AGREGAR MANUALMENTE */}
+              {/* Imagen 2 */}
               <div className="relative animate-fade-in-up order-2 lg:order-1">
-                <div className="w-full h-[400px] bg-surface/20 rounded-lg border-2 border-surface flex items-center justify-center">
-                  <p className="font-pixel text-xs text-muted-foreground">
-                    [AGREGAR IMAGEN AQUÍ]
-                  </p>
+                <div className="w-full h-[400px] bg-surface/20 rounded-lg border-2 border-surface flex items-center justify-center overflow-hidden">
+                  <img src={hero} alt="Personaje principal" className="w-full h-full object-cover rounded-lg" />
                 </div>
                 <div className="absolute inset-0 bg-gradient-crystal opacity-10 rounded-lg"></div>
               </div>
@@ -69,12 +68,11 @@ const Historia = () => {
                   Los Mundos de Sueños
                 </h3>
                 <p className="font-sans text-base text-muted-foreground leading-relaxed">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                  totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  A medida que Jason y Fairy avanzan en su viaje, descubren mundos llenos de maravillas y peligros.
+                  Desde bosques encantados hasta cavernas subterráneas, cada lugar presenta nuevos desafíos y enemigos que deben superar.
                 </p>
                 <p className="font-sans text-base text-muted-foreground leading-relaxed">
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos 
-                  qui ratione voluptatem sequi nesciunt.
+                  Con cada recuerdo recuperado, Jason se acerca más a descubrir la verdad detrás de su pérdida de memoria y el oscuro plan de Liderc.
                 </p>
               </div>
             </div>
