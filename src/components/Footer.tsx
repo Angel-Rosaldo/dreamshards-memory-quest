@@ -54,7 +54,7 @@ const Footer = () => {
 
         <div className="border-t border-surface mt-8 pt-8 text-center">
           <p className="font-pixel text-xs text-muted-foreground uppercase tracking-wider">
-            © 2024 Dreamshards. Todos los recuerdos preservados.
+            © 2025 Dreamshards. Todos los recuerdos preservados.
           </p>
         </div>
       </div>
