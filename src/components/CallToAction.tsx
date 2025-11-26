@@ -25,6 +25,7 @@ const CallToAction = () => {
             ¿Ayudarás al niño a recuperar lo que perdió?
           </p>
 
+          {/* Botones comentados temporalmente - funcionalidad futura
           <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
             <Button variant="hero" className="group text-base">
               Comienza tu viaje
@@ -34,6 +35,7 @@ const CallToAction = () => {
               Saber más
             </Button>
           </div>
+          */}
 
           <div className="pt-8">
             <p className="font-pixel text-xs text-accent uppercase tracking-wider">
