@@ -15,12 +15,12 @@ const Personajes = () => {
           </div>
 
           <div className="container mx-auto px-6 relative z-10">
-            <div className="text-center mb-16 animate-fade-in-up">
+          <div className="text-center mb-16 animate-fade-in-up">
               <h2 className="font-pixel text-3xl md:text-4xl text-foreground mb-6">
-                EL PROTAGONISTA
+                PERSONAJES
               </h2>
               <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto">
-                Texto placeholder - Agrega aquí la descripción de tu personaje principal
+                Conoce a los habitantes de los mundos de sueños
               </p>
             </div>
 
@@ -44,6 +44,114 @@ const Personajes = () => {
                 <div className="space-y-4">
                   <h3 className="font-pixel text-2xl text-foreground uppercase tracking-wider">
                     Nombre del Personaje
+                  </h3>
+                  <p className="font-sans text-base text-muted-foreground leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                  </p>
+                  <p className="font-sans text-base text-muted-foreground leading-relaxed">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident.
+                  </p>
+                </div>
+
+                <div className="pt-4">
+                  <h4 className="font-pixel text-sm text-primary uppercase tracking-wider mb-3">
+                    Habilidades Especiales
+                  </h4>
+                  <ul className="space-y-2">
+                    <li className="font-sans text-sm text-muted-foreground flex items-start gap-2">
+                      <span className="text-crystal">●</span>
+                      Habilidad placeholder 1
+                    </li>
+                    <li className="font-sans text-sm text-muted-foreground flex items-start gap-2">
+                      <span className="text-crystal">●</span>
+                      Habilidad placeholder 2
+                    </li>
+                    <li className="font-sans text-sm text-muted-foreground flex items-start gap-2">
+                      <span className="text-crystal">●</span>
+                      Habilidad placeholder 3
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Segundo Personaje */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center mt-32">
+              {/* Descripción del personaje 2 */}
+              <div className="space-y-6 animate-fade-in-up order-2 lg:order-1" style={{ animationDelay: '0.2s' }}>
+                <div className="space-y-4">
+                  <h3 className="font-pixel text-2xl text-foreground uppercase tracking-wider">
+                    Nombre del Personaje 2
+                  </h3>
+                  <p className="font-sans text-base text-muted-foreground leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                  </p>
+                  <p className="font-sans text-base text-muted-foreground leading-relaxed">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident.
+                  </p>
+                </div>
+
+                <div className="pt-4">
+                  <h4 className="font-pixel text-sm text-primary uppercase tracking-wider mb-3">
+                    Habilidades Especiales
+                  </h4>
+                  <ul className="space-y-2">
+                    <li className="font-sans text-sm text-muted-foreground flex items-start gap-2">
+                      <span className="text-crystal">●</span>
+                      Habilidad placeholder 1
+                    </li>
+                    <li className="font-sans text-sm text-muted-foreground flex items-start gap-2">
+                      <span className="text-crystal">●</span>
+                      Habilidad placeholder 2
+                    </li>
+                    <li className="font-sans text-sm text-muted-foreground flex items-start gap-2">
+                      <span className="text-crystal">●</span>
+                      Habilidad placeholder 3
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Imagen del personaje 2 - AGREGAR MANUALMENTE */}
+              <div className="relative animate-fade-in-up order-1 lg:order-2">
+                <div className="w-full h-[500px] bg-surface/20 rounded-lg border-2 border-surface flex items-center justify-center">
+                  <p className="font-pixel text-xs text-muted-foreground">
+                    [AGREGAR IMAGEN AQUÍ]
+                  </p>
+                </div>
+                <div className="absolute inset-0 bg-gradient-crystal opacity-10 rounded-lg"></div>
+                
+                {/* Decorative crystals */}
+                <div className="absolute -top-3 left-4 w-6 h-6 bg-accent rounded-full animate-crystal-shine opacity-80 shadow-crystal"></div>
+                <div className="absolute bottom-4 -right-3 w-4 h-4 bg-crystal rounded-full animate-float opacity-70"></div>
+              </div>
+            </div>
+
+            {/* Tercer Personaje */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center mt-32">
+              {/* Imagen del personaje 3 - AGREGAR MANUALMENTE */}
+              <div className="relative animate-fade-in-up">
+                <div className="w-full h-[500px] bg-surface/20 rounded-lg border-2 border-surface flex items-center justify-center">
+                  <p className="font-pixel text-xs text-muted-foreground">
+                    [AGREGAR IMAGEN AQUÍ]
+                  </p>
+                </div>
+                <div className="absolute inset-0 bg-gradient-crystal opacity-10 rounded-lg"></div>
+                
+                {/* Decorative crystals */}
+                <div className="absolute -top-3 right-4 w-6 h-6 bg-primary rounded-full animate-crystal-shine opacity-80 shadow-crystal"></div>
+                <div className="absolute bottom-4 -left-3 w-4 h-4 bg-accent rounded-full animate-float opacity-70"></div>
+              </div>
+
+              {/* Descripción del personaje 3 */}
+              <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                <div className="space-y-4">
+                  <h3 className="font-pixel text-2xl text-foreground uppercase tracking-wider">
+                    Nombre del Personaje 3
                   </h3>
                   <p className="font-sans text-base text-muted-foreground leading-relaxed">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
