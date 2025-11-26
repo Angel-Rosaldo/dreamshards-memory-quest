@@ -39,7 +39,7 @@ const CallToAction = () => {
 
           <div className="pt-8">
             <p className="font-pixel text-xs text-accent uppercase tracking-wider">
-              Disponible en PC • Próximamente en consolas
+              Disponible en PC
             </p>
           </div>
         </div>

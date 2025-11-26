@@ -1,5 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import playerImg from "@/assets/player.png";
+import heroCharacter from "@/assets/hero-character.jpg";
+import charactersTrio from "@/assets/characters-trio.jpg";
 
 const Personajes = () => {
   return (
@@ -27,12 +30,10 @@ const Personajes = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Imagen del personaje - AGREGAR MANUALMENTE */}
               <div className="relative animate-fade-in-up">
-                <div className="w-full h-[500px] bg-surface/20 rounded-lg border-2 border-surface flex items-center justify-center">
-                  <p className="font-pixel text-xs text-muted-foreground">
-                    [AGREGAR IMAGEN AQUÍ]
-                  </p>
+                <div className="w-full h-[500px] bg-surface/20 rounded-lg border-2 border-surface overflow-hidden">
+                  <img src={playerImg} alt="Nombre del Personaje" className="w-full h-full object-cover" />
                 </div>
-                <div className="absolute inset-0 bg-gradient-crystal opacity-10 rounded-lg"></div>
+                <div className="absolute inset-0 bg-gradient-crystal opacity-10 rounded-lg pointer-events-none"></div>
                 
                 {/* Decorative crystals */}
                 <div className="absolute -top-3 right-4 w-6 h-6 bg-crystal rounded-full animate-crystal-shine opacity-80 shadow-crystal"></div>
@@ -118,12 +119,10 @@ const Personajes = () => {
 
               {/* Imagen del personaje 2 - AGREGAR MANUALMENTE */}
               <div className="relative animate-fade-in-up order-1 lg:order-2">
-                <div className="w-full h-[500px] bg-surface/20 rounded-lg border-2 border-surface flex items-center justify-center">
-                  <p className="font-pixel text-xs text-muted-foreground">
-                    [AGREGAR IMAGEN AQUÍ]
-                  </p>
+                <div className="w-full h-[500px] bg-surface/20 rounded-lg border-2 border-surface overflow-hidden">
+                  <img src={heroCharacter} alt="Nombre del Personaje 2" className="w-full h-full object-cover" />
                 </div>
-                <div className="absolute inset-0 bg-gradient-crystal opacity-10 rounded-lg"></div>
+                <div className="absolute inset-0 bg-gradient-crystal opacity-10 rounded-lg pointer-events-none"></div>
                 
                 {/* Decorative crystals */}
                 <div className="absolute -top-3 left-4 w-6 h-6 bg-accent rounded-full animate-crystal-shine opacity-80 shadow-crystal"></div>
@@ -135,12 +134,10 @@ const Personajes = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center mt-32">
               {/* Imagen del personaje 3 - AGREGAR MANUALMENTE */}
               <div className="relative animate-fade-in-up">
-                <div className="w-full h-[500px] bg-surface/20 rounded-lg border-2 border-surface flex items-center justify-center">
-                  <p className="font-pixel text-xs text-muted-foreground">
-                    [AGREGAR IMAGEN AQUÍ]
-                  </p>
+                <div className="w-full h-[500px] bg-surface/20 rounded-lg border-2 border-surface overflow-hidden">
+                  <img src={charactersTrio} alt="Nombre del Personaje 3" className="w-full h-full object-cover" />
                 </div>
-                <div className="absolute inset-0 bg-gradient-crystal opacity-10 rounded-lg"></div>
+                <div className="absolute inset-0 bg-gradient-crystal opacity-10 rounded-lg pointer-events-none"></div>
                 
                 {/* Decorative crystals */}
                 <div className="absolute -top-3 right-4 w-6 h-6 bg-primary rounded-full animate-crystal-shine opacity-80 shadow-crystal"></div>
