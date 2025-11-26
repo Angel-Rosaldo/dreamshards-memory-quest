@@ -20,6 +20,7 @@ const Navigation = () => {
             </a>
           </div>
 
+          {/* Botones comentados temporalmente - funcionalidad futura
           <div className="flex items-center gap-4">
             <Button variant="ghost-pixel" className="hidden sm:inline-flex">
               Wishlist
@@ -28,6 +29,7 @@ const Navigation = () => {
               Jugar Ya
             </Button>
           </div>
+          */}
         </div>
       </div>
     </nav>
