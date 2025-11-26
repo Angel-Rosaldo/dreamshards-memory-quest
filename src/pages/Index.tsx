@@ -2,8 +2,6 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import GameFeatures from "@/components/GameFeatures";
 import CharacterShowcase from "@/components/CharacterShowcase";
-import PersonajeSection from "@/components/PersonajeSection";
-import HistoriaSection from "@/components/HistoriaSection";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 
@@ -15,8 +13,6 @@ const Index = () => {
         <HeroSection />
         <GameFeatures />
         <CharacterShowcase />
-        <PersonajeSection />
-        <HistoriaSection />
         <CallToAction />
       </main>
       <Footer />

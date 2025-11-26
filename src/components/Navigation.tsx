@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import DreamshardsBrand from "./DreamshardsBrand";
 
 const Navigation = () => {
@@ -9,15 +10,15 @@ const Navigation = () => {
           <DreamshardsBrand />
           
           <div className="hidden md:flex items-center gap-8">
-            <a href="#game" className="font-pixel text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
+            <Link to="/" className="font-pixel text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
               Juego
-            </a>
-            <a href="#characters" className="font-pixel text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
+            </Link>
+            <Link to="/personajes" className="font-pixel text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
               Personajes
-            </a>
-            <a href="#story" className="font-pixel text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
+            </Link>
+            <Link to="/historia" className="font-pixel text-xs text-muted-foreground hover:text-foreground transition-colors uppercase tracking-wider">
               Historia
-            </a>
+            </Link>
           </div>
 
           {/* Botones comentados temporalmente - funcionalidad futura
